@@ -1,31 +1,25 @@
 ---
-title: WordPress Publishing Error
-description: Trying to create a simple post in WordPress
-date: 2019-12-03
+title: Rule Based Chatbot
+description: Chatbot based on predefined rule.
+date: 2020-11-19
 draft: false
-slug: /pensieve/wordpress-publish-error
+slug: /pensieve/rule-based-chatbot
 tags:
-  - WordPress
+  - Python
 ---
 
-## Problem
+## About
 
-Recently while working on a WordPress project with [Ups Dock](https://github.com/Upstatement/ups-dock), I encountered a weird error where I wasn't able to update or publish a simple post in my local WP admin.
+A rule based simple chatbot designed on the motivation of handling customers in a real world, mostly you can't hire a bunch a people to respond to every queries that customer might ask, so we have chatbot for common FAQs.
 
 It looked something like this:
 
-![Draft fail](./draft-fail.png)
+![start](./start.png)
 
-Sometimes the error message would be slightly more helpful: `Publishing failed. Error message: The response is not a valid JSON response.`
+Signup form looks like this:
 
-![Publish error](./publish-error.png)
+![signup](./signup.png)
 
-And if I popped open the console, I saw these errors:
+Chat window looked similar to this:
 
-![Console errors](./console-errors.png)
-
-## Solution
-
-Since the error message had to do with a JSON response, I initially thought it was a Gutenberg or ACF issue. But it turned out this was happening because I was on the https WP admin (i.e. [https://project.ups.dock/wp-admin](https://project.ups.dock/wp-admin)), not the unsecure WP admin ([http://project.ups.dock/wp-admin](http://project.ups.dock/wp-admin)).
-
-It was a CORS error!! I was trying to modify a non-https domain from a https domain. Switching to a non-https WP admin allowed me to publish posts with no problem.
+![Chat](./chat.png)

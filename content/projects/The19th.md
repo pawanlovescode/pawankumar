@@ -1,16 +1,11 @@
 ---
-date: '2020-08-02'
+date: '2021-03-14'
 title: 'The 19th News'
-github: ''
-external: 'https://19thnews.org/'
+github: 'https://github.com/hakpk5/TaskApp'
 tech:
-  - WordPress
-  - Timber
-  - Gutenberg
-  - PHP
+  - HTML
+  - CSS
+  - SCSS
   - JS
-  - Mailchimp
-  - AMP
-company: 'Upstatement'
 showInProjects: false
 ---
