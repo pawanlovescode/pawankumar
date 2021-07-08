@@ -63,7 +63,7 @@ const Hero = () => {
   const four = (
     <p>
       I'm an India-based software engineer specialising in building products related to machine
-      learning with operations in mind. Currently, I'm focused on building accessible,
+      learning with operations in mind, using webapps for deployments of models. Currently, I'm focused on building accessible,
       human-centered products with deep learning to help with day to day issues.
     </p>
   );
